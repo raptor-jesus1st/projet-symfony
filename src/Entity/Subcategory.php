@@ -16,7 +16,7 @@ class Subcategory
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $name = null;
+    private ?string $nom = null;
 
     #[ORM\ManyToOne(inversedBy: 'subcategories')]
     #[ORM\JoinColumn(nullable: false)]
